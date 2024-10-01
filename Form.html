@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./Style/Styles.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="Form">
+        <form onsubmit="Submit(event)">
+            <table>
+                <tr >
+                    <td id="head" colspan="2" style="color: rgb(20, 20, 20) ;text-align: center;"><h1>Personal Information Form</h1></td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(22, 20, 20) ; text-align: center;">Name</td>
+                    <td id="td2">
+                        <input type="text" id="name" placeholder="Enter your Name Here..."/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(34, 30, 30) ;text-align: center;">Password</td>
+                    <td id="td2">
+<input type="password" id="password" placeholder="Enter Your Password..."/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(17, 16, 16) ;text-align: center;">Gender</td>
+                    <td id="td2" style="color: rgb(12, 11, 11) ;">
+                     Male <input type="radio" value="male" name="gender"/>
+                     Female <input type="radio" value="female" name="gender"/>
+                     Both <input type="radio" value="Both" name="gender"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(12, 11, 11) ;text-align: center;">Education</td>
+                    <td id="td2">
+                    <select id="education">
+                        <option value="BCS">BCS</option>
+                        <option value="BBA">BBA</option>
+                        <option value="MBA">MBA</option>
+                        <option value="BIT">High School</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(15, 12, 12) ;text-align: center;">Hobbies</td>
+                    <td  id="td2"style="color: black ;">
+                        Watching TV<input type="checkbox" name="hobbies" value="Watching TV"/>
+                        Reading<input type="checkbox" name="hobbies" value="Reading"/>
+                        Playing Football<input type="checkbox" name="hobbies" value="Playing Football"/>
+                        Playing Criket<input type="checkbox" name="hobbies" value="Playing Criket"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(8, 7, 7) ; text-align: center;">Comment</td>
+                    <td id="td2">
+                        <textarea id="comment" cols="45" row="5">
+Your Comments Is Here...
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit"> Submit </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="Form">
+        <table>
+            <tr>
+                <td style="color: rgb(12, 11, 11) ;text-align: center;" id="nameResult"></td>
+            </tr>
+            <tr>
+                <td style="color: rgb(8, 7, 7) ;text-align: center;" id="passwordResult"> </td>
+            </tr>
+            <tr>
+                <td style="color: rgb(8, 7, 7) ;text-align: center;" id="genderResult"> </td>
+            </tr>
+            <tr>
+                <td style="color: rgb(8, 8, 8) ;text-align: center;" id="hobbiesResult"> </td>
+            </tr>
+            <tr>
+                <td style="color: rgb(7, 7, 7) ;text-align: center;" id="educationResult"> </td>
+            </tr>
+            <tr>
+                <td style="color: rgb(10, 9, 9) ;text-align: center;" id="commentResult"> </td>
+            </tr>
+        </table>
+            </div>
+</div>
+
+
+<script src="./Style/js/functionality.js"></script>
+</body>
+</html>
